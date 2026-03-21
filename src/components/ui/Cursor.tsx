@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-
+import "./Cursor.css";
 import gsap from "gsap";
 
 const Cursor = () => {
