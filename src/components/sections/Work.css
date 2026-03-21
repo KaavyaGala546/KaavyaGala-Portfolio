@@ -1,0 +1,305 @@
+/* ── Work Section ── */
+.work-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  padding: 80px 0;
+}
+
+.work-content-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.work-text-content {
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2vw;
+}
+
+.work-section h2 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1;
+  letter-spacing: -2px;
+  background: linear-gradient(135deg, #ffffff 0%, #b3b3b3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  text-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+.work-section h2>span {
+  background: linear-gradient(135deg, #5eead4 0%, #0d9488 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  font-size: 130px;
+  margin-top: -10px;
+  filter: drop-shadow(0px 10px 20px rgba(13, 148, 136, 0.2));
+}
+
+.work-note {
+  font-size: 18px;
+  color: #ddd;
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 1px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.work-note::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 2px;
+  background-color: var(--accentColor);
+  border-radius: 2px;
+}
+
+.work-container {
+  margin: auto;
+}
+
+/* ── MacOS Folder ── */
+.mac-folder-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 650px;
+  padding-bottom: 50px;
+  flex: 1;
+  padding-right: 2vw;
+}
+
+.mac-folder {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  perspective: 1200px;
+  cursor: pointer;
+}
+
+.mac-folder-back {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1aa2f4, #0b80d0);
+  border-radius: 15px 15px 10px 10px;
+  box-shadow: inset 0 2px 5px rgba(255,255,255,0.3);
+  border: none;
+  z-index: 1;
+}
+
+.mac-folder-back::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 140px;
+  height: 30px;
+  background: #1aa2f4;
+  border-radius: 12px 18px 0 0;
+  border: none;
+  box-shadow: inset 0 2px 3px rgba(255,255,255,0.3);
+}
+
+.mac-folder-files {
+  position: absolute;
+  bottom: 20px;
+  /* Centered container for files */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 90%;
+  z-index: 2;
+}
+
+.folder-file {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.15);
+  padding: 30px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #111;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-origin: bottom center;
+  border-top: 6px solid #1aa2f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.file-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.file-content h4 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+}
+
+.file-category {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.file-tools {
+  font-size: 13px;
+  color: #444;
+  background: #e5e7eb;
+  padding: 8px 15px;
+  border-radius: 30px;
+  display: inline-block;
+  font-weight: 500;
+  width: fit-content;
+}
+
+/* Base state: stacked inside the folder */
+.folder-file {
+  transform: translateY(0) scale(0.95);
+  opacity: 0.8;
+}
+
+/* Hover over the folder */
+.mac-folder:hover .folder-file {
+  opacity: 1;
+  /* Fan out horizontally to make selecting easy */
+  transform: translateX(calc(-140px + (var(--index) * 70px))) translateY(calc(-160px - (abs(2 - var(--index)) * -10px))) rotate(calc(-12deg + (var(--index) * 6deg))) scale(1);
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.2);
+}
+
+/* Hover over individual file inside an active folder */
+.mac-folder:hover .folder-file:hover {
+  z-index: 100 !important;
+  transform: translateX(calc(-140px + (var(--index) * 70px))) translateY(calc(-240px - (abs(2 - var(--index)) * -10px))) rotate(0deg) scale(1.15) !important;
+  box-shadow: 0 -20px 50px rgba(0,0,0,0.4) !important;
+  border-top: 6px solid #0b80d0;
+}
+
+.mac-folder-front {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(to bottom, rgba(82, 196, 248, 0.95), rgba(41, 161, 230, 0.95));
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  z-index: 3;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.2), inset 0 2px 2px rgba(255,255,255,0.4);
+  transform-origin: bottom;
+  transform: rotateX(5deg);
+  transition: transform 0.4s ease;
+  border: none;
+}
+
+/* folder front label removed to mimic exactly */
+
+.mac-folder:hover .mac-folder-front {
+  transform: rotateX(25deg);
+}
+
+/* ── Responsive ── */
+@media only screen and (max-width: 1025px) {
+  .work-content-layout {
+    flex-direction: column-reverse;
+  }
+  .work-text-content {
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  .mac-folder-container {
+    padding-left: 0;
+    justify-content: center;
+    height: 550px;
+  }
+  .mac-folder {
+    width: 400px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .work-section {
+    padding: 50px 0;
+  }
+
+  .work-section h2 {
+    font-size: 50px;
+  }
+
+  .mac-folder-container {
+    height: 480px;
+    margin-top: 50px;
+  }
+
+  .mac-folder {
+    width: 320px;
+    height: 220px;
+  }
+
+  .mac-folder-back::before {
+    width: 110px;
+    height: 25px;
+    top: -20px;
+  }
+
+  .file-content h4 {
+    font-size: 20px;
+  }
+
+  .file-category {
+    font-size: 13px;
+  }
+
+  .file-tools {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .folder-file {
+    height: 200px;
+    padding: 20px;
+  }
+  
+  .mac-folder:hover .folder-file {
+    /* smaller fan spread for mobile */
+    transform: translateX(calc(-100px + (var(--index) * 50px))) translateY(calc(-100px)) rotate(calc(-8deg + (var(--index) * 4deg))) scale(1);
+  }
+  
+  .mac-folder:hover .folder-file:hover {
+    transform: translateX(calc(-100px + (var(--index) * 50px))) translateY(calc(-150px)) rotate(0deg) scale(1.1) !important;
+  }
+}
