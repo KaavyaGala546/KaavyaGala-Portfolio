@@ -262,6 +262,100 @@ h2.landing-info-h2 {
   left: 0;
 }
 
+@media screen and (max-width: 600px) {
+  .landing-section {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 100px 20px 40px 20px !important;
+    box-sizing: border-box !important;
+    height: 100vh !important;
+    overflow: hidden !important;
+  }
+  
+  .landing-container {
+    display: contents !important;
+  }
+
+  .landing-intro, .landing-info, .character-model {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .landing-intro {
+    order: 1 !important;
+    z-index: 10 !important;
+    text-align: center !important;
+  }
+
+  .character-model {
+    order: 2 !important;
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 250px !important;
+    max-height: 400px !important;
+    margin: 20px 0 !important;
+  }
+
+  .landing-info {
+    order: 3 !important;
+    z-index: 10 !important;
+    text-align: center !important;
+  }
+
+  /* Typography Alignment */
+  .landing-intro h1 {
+    font-size: 38px !important;
+    line-height: 46px !important;
+    white-space: normal !important;
+    letter-spacing: 4px !important;
+    margin: 0 !important;
+  }
+
+  .landing-intro h2 {
+    display: none !important;
+  }
+
+  .landing-info-h2::after {
+    display: none !important;
+  }
+
+  .landing-info-h2 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 !important;
+  }
+
+  .landing-h2-1 {
+    font-size: 36px !important;
+    margin: 0 !important;
+    line-height: normal !important;
+    font-weight: 700 !important;
+    color: #5eead4 !important; /* Premium cyan pop */
+  }
+
+  .landing-info h3 {
+    font-size: 18px !important;
+    margin-bottom: 5px !important;
+    font-weight: 400 !important;
+    color: #a5f3fc !important;
+    white-space: nowrap !important;
+  }
+}
+
+
 @media screen and (min-width: 500px) {
   .landing-circle2 {
     display: block;

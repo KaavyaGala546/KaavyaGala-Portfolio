@@ -41,6 +41,12 @@ body {
   overflow: hidden;
 }
 
+#root {
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100vw;
+}
+
 a {
   color: inherit;
   text-decoration: inherit;

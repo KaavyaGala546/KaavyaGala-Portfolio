@@ -5,7 +5,7 @@ const Career = () => {
     <div className="career-section section-container">
       <div className="career-container">
         <h2>
-          Leadership<span>&</span>
+          Leadership <span>&</span>
           <br /> Initiatives
         </h2>
         <div className="career-info">

@@ -232,7 +232,7 @@
 /* ── Responsive ── */
 @media only screen and (max-width: 1025px) {
   .work-content-layout {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .work-text-content {
     text-align: center;
@@ -301,5 +301,65 @@
   
   .mac-folder:hover .folder-file:hover {
     transform: translateX(calc(-100px + (var(--index) * 50px))) translateY(calc(-150px)) rotate(0deg) scale(1.1) !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mac-folder {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    perspective: none;
+  }
+  .mac-folder-container {
+    height: auto;
+  }
+  .mac-folder-back, .mac-folder-front {
+    display: none;
+  }
+  .mac-folder-files {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    bottom: 0;
+  }
+  .folder-file {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    transform: none !important;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+    border-top: 4px solid #5eead4;
+    border-radius: 16px;
+    color: #fff;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .folder-file .file-content h4 {
+    color: #fff;
+    font-size: 22px;
+  }
+  .folder-file .file-category {
+    color: #a5f3fc;
+  }
+  .folder-file .file-tools {
+    background: rgba(94, 234, 212, 0.15);
+    color: #5eead4;
+    border: 1px solid rgba(94, 234, 212, 0.3);
+  }
+  .mac-folder:hover .folder-file {
+    transform: none !important;
+  }
+  .mac-folder:hover .folder-file:hover {
+    transform: translateY(-5px) scale(1) !important;
+    border-top: 4px solid #14b8a6;
   }
 }
