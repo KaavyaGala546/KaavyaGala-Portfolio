@@ -20,13 +20,13 @@
 
 ## Live Website
 
-https://your-portfolio-link.com
+https://kaavya-gala-portfolio.vercel.app/
 
 ---
 
 ## Overview
 
-This portfolio is designed to present my work as a developer through a structured, visually clean, and easy-to-navigate interface.
+This portfolio is built to present my work as a developer through a structured, visually clean, and easy-to-navigate interface.
 
 It highlights:
 - selected projects and their purpose  
@@ -39,8 +39,8 @@ Unlike basic portfolio websites, this project focuses on structured presentation
 
 ## Features
 
-- Responsive design across devices  
-- Structured project showcase  
+- Fully responsive design (mobile, tablet, desktop)  
+- Structured project showcase with GitHub links  
 - Clean and modern UI  
 - Smooth navigation and interaction  
 - Minimal and focused layout  
@@ -50,8 +50,8 @@ Unlike basic portfolio websites, this project focuses on structured presentation
 ## Sections
 
 - **About** — background and introduction  
-- **Projects** — selected work with GitHub links  
-- **Skills** — technologies and tools used  
+- **Projects** — selected work with descriptions  
+- **Skills** — technologies and tools  
 - **Contact** — ways to connect  
 
 ---
@@ -59,7 +59,7 @@ Unlike basic portfolio websites, this project focuses on structured presentation
 ## Tech Stack
 
 - **Frontend:** React + TypeScript + Vite  
-- **Styling:** CSS / Tailwind (update if needed)  
+- **Styling:** CSS  
 - **Deployment:** Vercel  
 
 ---
@@ -82,6 +82,7 @@ KaavyaGala-Portfolio/
 ├── src/
 ├── index.html
 ├── package.json
+├── vite.config.ts
 └── README.md
 ```
 
@@ -106,7 +107,7 @@ This portfolio focuses on:
 - simplicity over clutter  
 - usability over decoration  
 
-The emphasis is on presenting work in a way that is easy to scan and understand.
+The goal is to present work in a way that is easy to scan, understand, and navigate.
 
 ---
 
@@ -121,4 +122,4 @@ GitHub: https://github.com/KaavyaGala546
 
 ## Final Note
 
-This portfolio is built to reflect not just projects, but the way I approach building — with structure, clarity, and attention to detail.
+This portfolio reflects not just projects, but the way I approach building — with structure, clarity, and attention to detail.
