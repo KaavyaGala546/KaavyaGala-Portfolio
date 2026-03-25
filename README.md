@@ -20,7 +20,7 @@
 
 ## Live Website
 
-portfolio-swart-gamma-21.vercel.app
+https://portfolio-swart-gamma-21.vercel.app/
 ---
 
 ## Overview
