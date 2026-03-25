@@ -1,6 +1,6 @@
 # Kaavya Gala — Portfolio
 
-> A modern, responsive portfolio showcasing projects, skills, and engineering work.
+> Explore my work, projects, and technical journey through a clean, interactive portfolio.
 
 ---
 
@@ -8,76 +8,68 @@
 
 <p align="center">
   <a href="assets/screenshots/livepreview.mp4">
-    <img src="assets/preview.gif" alt="Live Preview" width="800"/>
+    <img src="assets/screenshots/preview.gif" alt="Portfolio Demo" width="800"/>
   </a>
 </p>
 
 <p align="center">
-  ▶️ Click the image to view full demo
+  <b>Click preview to watch full demo</b>
 </p>
 
 ---
 
 ## Live Website
 
-https://portfolio-swart-gamma-21.vercel.app/
+https://your-portfolio-link.com
+
 ---
 
 ## Overview
 
-This portfolio is designed to present my work as a developer through a clean, structured, and interactive interface.
+This portfolio is designed to present my work as a developer through a structured, visually clean, and easy-to-navigate interface.
 
 It highlights:
-- selected projects
-- technical skills
-- development approach
-- user-focused design
+- selected projects and their purpose  
+- technical skills and tools  
+- development approach and design thinking  
 
-Unlike basic portfolio pages, this project focuses on **clarity, structure, and usability**, making it easy to navigate and evaluate.
+The goal is to make it simple for anyone — recruiter, developer, or collaborator — to quickly understand what I build and how I think.
 
 ---
 
 ## Features
 
-- Fully responsive design (mobile, tablet, desktop)
-- Project showcase with direct GitHub links
-- Clean UI with modern layout
-- Smooth navigation and interaction
-- Organized sections for quick exploration
+- Responsive design across devices  
+- Structured project showcase  
+- Clean and modern UI  
+- Smooth navigation and interaction  
+- Minimal and focused layout  
 
 ---
 
 ## Sections
 
 - **About** — background and introduction  
-- **Projects** — selected work with descriptions  
-- **Skills** — technologies and tools  
+- **Projects** — selected work with GitHub links  
+- **Skills** — technologies and tools used  
 - **Contact** — ways to connect  
 
 ---
 
 ## Tech Stack
 
-**Frontend**
-- HTML5
-- CSS3
-- JavaScript / React (update based on your stack)
-
-**Styling**
-- Modern CSS / Tailwind / Bootstrap (update accordingly)
-
-**Deployment**
-- Netlify / Vercel / GitHub Pages (update)
+- **Frontend:** React + TypeScript + Vite  
+- **Styling:** CSS / Tailwind (update if needed)  
+- **Deployment:** Vercel  
 
 ---
 
-## Example Use Case
+## Example Usage
 
-This portfolio enables:
-
-- Recruiters to quickly evaluate projects  
-- Developers to explore implementation details  
-- Visitors to understand skills and experience efficiently  
+- Quickly review projects and their purpose  
+- Navigate through skills and technologies  
+- Access GitHub repositories directly  
+- Understand development approach at a glance  
 
 ---
 
@@ -86,8 +78,8 @@ This portfolio enables:
 ```
 KaavyaGala-Portfolio/
 ├── assets/
-├── src/
 ├── public/
+├── src/
 ├── index.html
 ├── package.json
 └── README.md
@@ -101,28 +93,20 @@ KaavyaGala-Portfolio/
 git clone https://github.com/KaavyaGala546/KaavyaGala-Portfolio.git
 cd KaavyaGala-Portfolio
 npm install
-npm start
+npm run dev
 ```
 
 ---
 
 ## Design Philosophy
 
-This project focuses on:
+This portfolio focuses on:
 
-- Simplicity over clutter  
-- Clear presentation of work  
-- Fast navigation and usability  
-- Clean visual hierarchy  
+- clarity over complexity  
+- simplicity over clutter  
+- usability over decoration  
 
----
-
-## Future Improvements
-
-- Dark / Light mode toggle  
-- Blog / writing section  
-- Improved animations  
-- Project filtering  
+The emphasis is on presenting work in a way that is easy to scan and understand.
 
 ---
 
@@ -137,4 +121,4 @@ GitHub: https://github.com/KaavyaGala546
 
 ## Final Note
 
-This portfolio is built to represent not just projects, but the way I approach building systems — with clarity, structure, and usability in mind.
+This portfolio is built to reflect not just projects, but the way I approach building — with structure, clarity, and attention to detail.
