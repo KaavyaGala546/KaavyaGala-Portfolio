@@ -1,126 +1,141 @@
-# Portfolio Website
+# Kaavya Gala — Portfolio
 
-An interactive portfolio built with React, TypeScript, Three.js, and GSAP, focused on immersive user experience, 3D interaction, and modern frontend architecture.
-
----
-
-## 🚀 Live Demo
-
-👉 **Live Portfolio:** https://portfolio-swart-gamma-21.vercel.app
-
-*A modern interactive portfolio featuring 3D visuals, animations, and scalable frontend architecture.*
+> A modern, responsive portfolio showcasing projects, skills, and engineering work.
 
 ---
 
-## 📌 Overview
+## Preview
 
-This portfolio showcases my work in software development, AI/ML, and full-stack engineering through an interactive and visually engaging interface. It combines clean system architecture with modern frontend techniques such as animation, 3D rendering, and smooth transitions.
+<p align="center">
+  <a href="assets/screenshots/preview.mp4">
+    <img src="assets/screenshots/livepreview.png" alt="Portfolio Demo" width="800"/>
+  </a>
+</p>
 
-The project demonstrates how complex interactions can be implemented efficiently while maintaining performance and scalability in a production-ready frontend system.
-
----
-
-## ✨ Key Features
-
-* Interactive 3D components using Three.js and React Three Fiber
-* Physics-based skill visualization using Rapier
-* Scroll-based animations and transitions powered by GSAP
-* Modular and scalable React + TypeScript architecture
-* Smooth navigation and responsive UI design
-* Fully deployed and performance-optimized application
+<p align="center">
+  ▶️ Click to view full demo
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+## Live Website
 
-### Core
-
-* React 18
-* TypeScript
-* Vite
-
-### 3D & Animation
-
-* Three.js
-* React Three Fiber
-* @react-three/rapier
-* GSAP
-* @react-three/postprocessing
-
-### Styling & UI
-
-* Tailwind CSS
+https://your-portfolio-link.com
 
 ---
 
-## ⚙️ Architecture
+## Overview
 
-The application follows a modular, component-driven structure:
+This portfolio is designed to present my work as a developer through a clean, structured, and interactive interface.
 
-* **Sections** — Independent UI sections (About, Work, Contact)
-* **Components** — Reusable UI and animation components
-* **Context** — Global state and interaction handling
-* **Assets** — 3D models, textures, and static resources
-* **Utils** — Helper functions and configuration
+It highlights:
+- selected projects
+- technical skills
+- development approach
+- user-focused design
 
-This structure ensures scalability, maintainability, and clear separation of concerns.
+Unlike basic portfolio pages, this project focuses on **clarity, structure, and usability**, making it easy to navigate and evaluate.
 
 ---
 
-## ▶️ Getting Started
+## Features
+
+- Fully responsive design (mobile, tablet, desktop)
+- Project showcase with direct GitHub links
+- Clean UI with modern layout
+- Smooth navigation and interaction
+- Organized sections for quick exploration
+
+---
+
+## Sections
+
+- **About** — background and introduction  
+- **Projects** — selected work with descriptions  
+- **Skills** — technologies and tools  
+- **Contact** — ways to connect  
+
+---
+
+## Tech Stack
+
+**Frontend**
+- HTML5
+- CSS3
+- JavaScript / React (update based on your stack)
+
+**Styling**
+- Modern CSS / Tailwind / Bootstrap (update accordingly)
+
+**Deployment**
+- Netlify / Vercel / GitHub Pages (update)
+
+---
+
+## Example Use Case
+
+This portfolio enables:
+
+- Recruiters to quickly evaluate projects  
+- Developers to explore implementation details  
+- Visitors to understand skills and experience efficiently  
+
+---
+
+## Project Structure
+
+```
+KaavyaGala-Portfolio/
+├── assets/
+├── src/
+├── public/
+├── index.html
+├── package.json
+└── README.md
+```
+
+---
+
+## Local Setup
 
 ```bash
-git clone https://github.com/KaavyaGala546/Portfolio.git
-cd Portfolio
-
+git clone https://github.com/KaavyaGala546/KaavyaGala-Portfolio.git
+cd KaavyaGala-Portfolio
 npm install
-npm run dev
+npm start
 ```
 
 ---
 
-## 📁 Project Structure
+## Design Philosophy
 
-```
-Portfolio/
-│
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── sections/       # Page sections (About, Work, Contact)
-│   ├── context/        # Global state management
-│   ├── assets/         # Models, textures, images
-│   └── utils/          # Utility functions
-│
-├── public/
-├── package.json
-└── vite.config.ts
-```
+This project focuses on:
+
+- Simplicity over clutter  
+- Clear presentation of work  
+- Fast navigation and usability  
+- Clean visual hierarchy  
 
 ---
 
-## 🖼️ Screenshots
+## Future Improvements
 
-*Add screenshots or demo GIF here*
-
----
-
-## 🚀 Future Improvements
-
-* Performance optimization for complex 3D scenes
-* Additional interactive components and animations
-* Improved accessibility and cross-device support
-* Enhanced visual effects and transitions
+- Dark / Light mode toggle  
+- Blog / writing section  
+- Improved animations  
+- Project filtering  
 
 ---
 
-## 👤 Author
+## Author
 
-**Kaavya Gala**
+**Kaavya Gala**  
+AI / Full Stack Developer  
 
-* GitHub: https://github.com/KaavyaGala546
+GitHub: https://github.com/KaavyaGala546  
 
 ---
 
-## ⭐ Notes
+## Final Note
 
-This project was built to explore modern frontend engineering by combining 3D graphics, animation, and scalable architecture to create an engaging and interactive portfolio experience.
+This portfolio is built to represent not just projects, but the way I approach building systems — with clarity, structure, and usability in mind.
