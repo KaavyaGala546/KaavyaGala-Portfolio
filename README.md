@@ -20,7 +20,7 @@
 
 ## Live Website
 
-https://kaavya-gala-portfolio.vercel.app/
+[https://kaavya-gala-portfolio.vercel.app/](https://kaavya-portfolio.vercel.app/)
 
 ---
 
