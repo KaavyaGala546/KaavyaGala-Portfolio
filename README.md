@@ -1,4 +1,5 @@
-# 🚀 Kaavya Gala — Portfolio  
+# 🚀 Kaavya Gala — Portfolio
+Built with React, TypeScript, and GSAP for performance-focused UI.
 
 > A performance-focused frontend system designed to showcase projects, skills, and engineering approach through structured UI and smooth animations.
 
@@ -20,7 +21,7 @@
 
 ## Live Website
 
-https://kaavya-portfolio.vercel.app/
+👉 https://kaavya-portfolio.vercel.app/
 
 ---
 
@@ -38,6 +39,8 @@ The goal is to make it easy for anyone (especially recruiters) to quickly unders
 ---
 
 ## 🏗️ Architecture  
+
+UI → Components → GSAP → Data
 
 The application is designed with a modular frontend structure:
 
@@ -99,9 +102,6 @@ KaavyaGala-Portfolio/
 
 ---
 
-
----
-
 ## 🧠 Engineering Decisions  
 
 - Used **React + TypeScript** for scalability and maintainability  
@@ -113,10 +113,10 @@ KaavyaGala-Portfolio/
 
 ## 📈 Use Cases  
 
-- Quickly review projects and their purpose  
-- Evaluate technical skills and tools  
-- Navigate through work efficiently  
-- Understand development approach at a glance  
+- Quickly evaluate projects and technical depth  
+- Understand system design and development approach  
+- Navigate through work with minimal friction  
+- Access source code and implementations directly  
 
 ---
 
@@ -129,7 +129,7 @@ npm install
 npm run dev
 ```
 
-## Design Philosophy
+## 🎯 Design Philosophy
 
 This portfolio focuses on:
 
@@ -141,7 +141,7 @@ The goal is to present work in a way that is easy to scan, understand, and navig
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Kaavya Gala**  
 AI / Full Stack Developer  
@@ -150,6 +150,7 @@ GitHub: https://github.com/KaavyaGala546
 
 ---
 
-## Final Note
+## ⚡ Final Note  
 
-This portfolio reflects not just projects, but the way I approach building — with structure, clarity, and attention to detail.
+This project reflects my focus on building systems that are  
+**structured, performant, and designed for real-world usability.**
